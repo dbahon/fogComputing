@@ -1,0 +1,25 @@
+
+#!/bin/bash
+clear
+echo "---------Starting Script---------"
+
+echo "---------Converting---------"
+javac Cliente.java
+#for nfile in 250.txt; do #1.txt 10.txt 50.txt 250.txt; do
+
+	#for (( i=0; i<30; i++ ))do
+	java -Djavax.net.ssl.trustStore=/home/diego/Documentos/TFM/mykeystore/diegoKeystore -Djavax.net.ssl.trustStorePassword=alumnoeps -Xms1024m -Xmx4096m Cliente
+	#echo "3" > /proc/sys/vm/drop_caches
+	#done
+#done
+#java -Djavax.net.ssl.trustStore=/home/diego/Documentos/TFM/mykeystore/diegoKeystore -Djavax.net.ssl.trustStorePassword=alumnoeps -Xms1024m -Xmx4096m Cliente 1 1 500.txt  >> output.txt
+
+#while read -r num; do
+ #  sleep 1
+  # echo ${num}
+#done < inn| tee -a output.txt| java -Djavax.net.ssl.trustStore=/home/diego/Documentos/TFM/mykeystore/diegoKeystore -Djavax.net.ssl.trustStorePassword=alumnoeps -Xms1024m -Xmx4096m Cliente   >> output.txt
+
+
+#java -Djavax.net.ssl.trustStore=/home/diego/Documentos/TFM/mykeystore/diegoKeystore -Djavax.net.ssl.trustStorePassword=alumnoeps -Xms1024m -Xmx4096m Cliente 1 4 500.txt >> output"_"500".txt"
+echo "---------Finished Script---------"
+	

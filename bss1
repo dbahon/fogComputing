@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+echo "---------Starting Script---------"
+
+echo "---------Converting---------"
+javac Servidor1.java
+
+java -Djavax.net.ssl.keyStore=/home/diego/Documentos/TFM/mykeystore/diegoKeystore -Djavax.net.ssl.keyStorePassword=alumnoeps -Xms1024m -Xmx2048m Servidor1 
+
+
+
+echo "---------Finished Script---------"
